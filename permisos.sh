@@ -24,31 +24,16 @@ mkdir -p /proyectos/{pruebas,src}
 #setfacl -m d:g:explotacion:rx src#/
 
 #Creacion de los archivos de la empresa
+#touch Proyecto1.pdf, Proyecto2.pdf proyectos/
+#touch prueba1.pdf, prueba2.pdf proyectos/pruebas/
+#touch App1.sh, App2.sh proyectos/src/
+
 
 #Comando para listar los grupos
 groups
 
 #Comando para listar los grupos con su ID
 id
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
