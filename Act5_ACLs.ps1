@@ -13,3 +13,14 @@ Add-LocalGroupMember -Group grupo03 -Member L.Puerta Logica
 ------------------------------------------------------------
 
 mkdir -p C:\user02\home\{dir01\{dir03}, dir02}
+write "" > C:\user02home\dir01\fich01
+
+write "" > C:\user02home\fich02
+
+icacls "C:\user02home\dir01" /grant usu01:(OI)(CI)F /T
+
+icacls "C:\user02home\dir01\fich01" /grant usu03:(OI)(CI)F /T
+
+icacls "C:\user02home\fich02" /grant usu01:(OI)(CI)F /T
+
+icacls "C:\user02home\dir02" /grant usu01:(OI)(CI)F /T
