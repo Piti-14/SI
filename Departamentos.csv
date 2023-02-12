@@ -1,0 +1,12 @@
+departamento,descripcion
+profesorado,Acceso a toda la estructura
+alumnado,Sin acceso a la estructura
+DAM,Control total solo de 15 a 21 horas
+1ESO,Control en el directorio 1ESO
+2ESO,Control en el directorio 1ESO
+3ESO,Control en el directorio 1ESO
+4ESO,Control en el directorio 1ESO
+1BACH,Control en el directorio 1BACH
+2BACH,Control en el directorio 2BACH
+Lectura_ESO,Acceso completo al directorio ESO
+Lectura_BACH,Acceso completo al directorio BACH

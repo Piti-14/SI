@@ -1,0 +1,11 @@
+cuenta,password,nombre,descripcion,departamento,deptSecundario,diasAcceso,inicioAcceso,finAcceso
+Fulanito,Alumnode1IES,Fer Mendez,Alumno de 1ºESO,1ESO,Lectura_ESO,L-V,8am,9am
+Miguelito,Alumnode1IES,Miguel Rodriguez,Alumno de 2ºESO,2ESO,Lectura_ESO,L-V,9am,10am
+Sarita,Alumnode1IES,Sara Campos,Alumno de 3ºESO,3ESO,Lectura_ESO,L-V,10am,11am
+Alex,Alumnode1IES,Alejandro Rios,Alumno de 4ºESO,4ESO,Lectura_ESO,L-V,11am,12pm
+Tamara,Alumnode1IES,Tamara De Ayo,Alumno de 1ºBACH,1BACH,Lectura_BACH,L-V,12pm,1pm
+Alma,Alumnode1IES,Alma Garcia,Alumno de 2ºBACH,2BACH,Lectura_BACH,L-V,1pm,2pm
+Eddy,Alumnode1IES,Edward Jones,Alumno de DAM,DAM,Administradores,L-V,3pm,9pm
+Manolito,Invitadode1IES,Manolo Nuevo,Alumno sin asignar,alumnado,,L-V,8am,9pm
+SitaLopez,Profede1IES,Rafaela Tomas,Profesora sin asignar,profesorado,,L-V,8am,9pm
+t800,CreadorTota1,Skynet Slave,Administrador del sistema,Administradores,,,,
