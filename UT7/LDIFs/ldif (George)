@@ -1,0 +1,139 @@
+dn: ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Hospitales
+
+dn: ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Provincial
+
+dn: ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Departamentos
+
+dn: ou=depOftalmologia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: depOftalmologia
+
+dn: ou=depEnfermeria,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: depEnfermeria
+
+dn: ou=depInformatica,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: depInformatica
+
+dn: ou=depFisioterapia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: depFisioterapia
+
+dn: ou=Grupos,ou=depFisioterapia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Grupos
+
+dn: ou=Grupos,ou=depEnfermeria,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Grupos
+
+dn: ou=Grupos,ou=depInformatica,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Grupos
+
+dn: ou=Grupos,ou=depOftalmologia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Grupos
+
+dn: ou=Usuarios,ou=depFisioterapia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Usuarios
+
+dn: ou=Usuarios,ou=depEnfermeria,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Usuarios
+
+dn: ou=Usuarios,ou=depInformatica,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Usuarios
+
+dn: ou=Usuarios,ou=depOftalmologia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Usuarios
+
+dn: cn=GGOftalmologia,ou=Grupos,ou=depOftalmologia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: posixGroup
+cn: GGOftalmologia
+gidNumber: 33000
+
+dn: cn=GGEnfermeria,ou=Grupos,ou=depEnfermeria,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: posixGroup
+cn: GGEnfermeria
+gidNumber: 33001
+
+dn: cn=GGInformatica,ou=Grupos,ou=depInformatica,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: posixGroup
+cn: GGInformatica
+gidNumber: 33002
+
+dn: cn=GGFisioterapia,ou=Grupos,ou=depFisioterapia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: posixGroup
+cn: GGFisioterapia
+gidNumber: 33003
+
+dn: uid=PIEDAD,ou=Usuarios,ou=depOftalmologia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: PIEDAD
+sn: Direccion
+givenName: PIEDAD
+cn: PIEDAD Direccion
+displayName: PIEDAD Direccion
+uidNumber: 33100
+gidNumber: 33000
+userPassword: {SSHA}b4C1ioQEMYsvJJbb8t7GXs4URdx2beXC
+loginShell: /bin/bash
+homeDirectory: /home/PIEDAD
+
+dn: uid=MANUEL,ou=Usuarios,ou=depEnfermeria,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: MANUEL
+sn: MedicinaGeneral
+givenName: MANUEL
+cn: MANUEL MedicinaGeneral
+displayName: MANUEL MedicinaGeneral
+uidNumber: 33101
+gidNumber: 33001
+userPassword: {SSHA}b4C1ioQEMYsvJJbb8t7GXs4URdx2beXC
+loginShell: /bin/bash
+homeDirectory: /home/MANUEL
+
+dn: uid=JAVIER,ou=Usuarios,ou=depInformatica,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: JAVIER
+sn: MedicinaRehabilitadora
+givenName: JAVIER
+cn: JAVIER MedicinaRehabilitadora
+displayName: JAVIER MedicinaRehabilitadora
+uidNumber: 33102
+gidNumber: 33002
+userPassword: {SSHA}b4C1ioQEMYsvJJbb8t7GXs4URdx2beXC
+loginShell: /bin/bash
+homeDirectory: /home/JAVIER
+
+dn: uid=EVA,ou=Usuarios,ou=depFisioterapia,ou=Departamentos,ou=Provincial,ou=Hospitales,dc=san,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: EVA
+sn: Fisioterapia
+givenName: EVA
+cn: EVA Fisioterapia
+displayName: EVA Fisioterapia
+uidNumber: 33103
+gidNumber: 33003
+userPassword: {SSHA}b4C1ioQEMYsvJJbb8t7GXs4URdx2beXC
+loginShell: /bin/bash
+homeDirectory: /home/EVA
