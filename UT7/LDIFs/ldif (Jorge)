@@ -1,0 +1,135 @@
+dn: ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: General
+
+dn: ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Departamentos
+
+dn: ou=ComunicacionyPrensa,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: ComunicacionyPrensa
+
+dn: ou=Alergologia,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Alergologia
+
+dn: ou=Informatica,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Informatica
+
+dn: ou=Enfermeria,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Enfermeria
+
+dn: ou=Grupos,ou=Enfermeria,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Grupos
+
+dn: ou=Grupos,ou=Alergologia,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Grupos
+
+dn: ou=Grupos,ou=Informatica,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Grupos
+
+dn: ou=Grupos,ou=ComunicacionyPrensa,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Grupos
+
+dn: ou=Usuarios,ou=Enfermeria,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Usuarios
+
+dn: ou=Usuarios,ou=Alergologia,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Usuarios
+
+dn: ou=Usuarios,ou=Informatica,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Usuarios
+
+dn: ou=Usuarios,ou=ComunicacionyPrensa,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: organizationalUnit
+ou: Usuarios
+
+dn: cn=GGComunicacionyPrensa,ou=Grupos,ou=ComunicacionyPrensa,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: posixGroup
+cn: GGComunicacionyPrensa
+gidNumber: 14000
+
+dn: cn=GGAlergologia,ou=Grupos,ou=Alergologia,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: posixGroup
+cn: GGAlergologia
+gidNumber: 14001
+
+dn: cn=GGInformatica,ou=Grupos,ou=depInformatica,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: posixGroup
+cn: GGInformatica
+gidNumber: 14002
+
+dn: cn=GGFisioterapia,ou=Grupos,ou=Enfermeria,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: posixGroup
+cn: GGFisioterapia
+gidNumber: 14003
+
+dn: uid=RODRIGO,ou=Usuarios,ou=ComunicacionyPrensa,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: RODRIGO
+sn: ComunicacionyPrensa
+givenName: RODRIGO
+cn: RODRIGO ComunicacionyPrensa
+displayName: RODRIGO ComunicacionyPrensa
+uidNumber: 14100
+gidNumber: 14000
+userPassword: {SSHA}b4C1ioQEMYsvJJbb8t7GXs4URdx2beXC
+loginShell: /bin/bash
+homeDirectory: /home/RODRIGO
+
+dn: uid=JOHANN,ou=Usuarios,ou=depAlergologia,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: JOHANN
+sn: Alergologia
+givenName: JOHANN
+cn: JOHANN Alergologia
+displayName: JOHANN Alergologia
+uidNumber: 14101
+gidNumber: 14001
+userPassword: {SSHA}b4C1ioQEMYsvJJbb8t7GXs4URdx2beXC
+loginShell: /bin/bash
+homeDirectory: /home/JOHANN
+
+dn: uid=ANA,ou=Usuarios,ou=Informatica,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: ANA
+sn: Informatica
+givenName: ANA
+cn: ANA Informatica
+displayName: ANA Informatica
+uidNumber: 14102
+gidNumber: 14002
+userPassword: {SSHA}b4C1ioQEMYsvJJbb8t7GXs4URdx2beXC
+loginShell: /bin/bash
+homeDirectory: /home/ANA
+
+dn: uid=PABLO,ou=Usuarios,ou=Enfermeria,ou=Departamentos,ou=General,ou=Hospitales,dc=san,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: PABLO
+sn: Fisioterapia
+givenName: PABLO
+cn: SUSANA Enfermeria
+displayName: PABLO Enfermeria
+uidNumber: 14103
+gidNumber: 14003
+userPassword: {SSHA}b4C1ioQEMYsvJJbb8t7GXs4URdx2beXC
+loginShell: /bin/bash
+homeDirectory: /home/PABLO
